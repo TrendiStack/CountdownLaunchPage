@@ -1,0 +1,28 @@
+:root {
+  --clock-w-mobile: 20vw;
+}
+
+html {
+  background: url("./images/Group\ 9.png");
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media (min-width: 1400px) {
+  html {
+    background: url("./images/Group\ 8-2.png");
+    background-size: cover;
+  }
+}

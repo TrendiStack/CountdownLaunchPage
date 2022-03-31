@@ -1,0 +1,196 @@
+.countdownContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw;
+}
+
+.numberBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: var(--clock-w-mobile);
+  height: var(--clock-w-mobile);
+
+  color: #fb5e84;
+  background: #343650;
+  border-radius: 8px;
+
+  font-weight: 700;
+  font-size: 35px;
+  z-index: 99;
+}
+
+.numberBoxTest {
+  position: absolute;
+  width: 140px;
+  height: 148px;
+  background: #343650;
+  border-radius: 8px;
+}
+
+.shadow {
+  position: relative;
+
+  top: 7px;
+  width: var(--clock-w-mobile);
+  height: 20.5vw;
+  border-radius: 8px;
+
+  background: #191a23;
+}
+
+.rectangleOne {
+  opacity: 0.15;
+  background-color: #000;
+  height: 1px;
+  position: absolute;
+  top: 48.1vh;
+  width: var(--clock-w-mobile);
+  z-index: 100;
+}
+
+.rectangleTwo {
+  background-color: #000;
+  border-radius: 0px 0px 8px 8px;
+  height: 10.5vw;
+  opacity: 0.15;
+  position: absolute;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  width: var(--clock-w-mobile);
+  z-index: 100;
+}
+
+.halfCircleOne {
+  background-color: #191a23;
+  border-radius: 0px 8px 8px 0px;
+  height: 12px;
+  position: absolute;
+  top: 47.2vh;
+  width: 8px;
+  z-index: 120;
+}
+
+.halfCircleTwo {
+  background-color: #191a23;
+  border-radius: 8px 0px 0px 8px;
+  height: 12px;
+  margin-left: 18%;
+  position: absolute;
+  top: 47.2vh;
+  width: 8px;
+  z-index: 125;
+}
+
+.calenderText {
+  background-color: transparent;
+  color: #8385a9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.mountainImage {
+  bottom: 0%;
+}
+
+.launchText {
+  text-align: center;
+  color: white;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin: 132px 0 100px 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 350px) {
+  .launchText {
+    letter-spacing: 5px;
+    margin: 90px 0 100px 0;
+  }
+}
+
+@media (min-width: 414px) {
+  .rectangleOne {
+    height: 1px;
+    top: 324.8px;
+    width: 80px;
+  }
+
+  .halfCircleOne {
+    top: 320px;
+    width: 8px;
+  }
+
+  .halfCircleTwo {
+    top: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .countdownContainer {
+    margin: 0 32px;
+  }
+
+  .numberContainer {
+    margin: 0 1vw;
+  }
+
+  .launchText {
+    margin-bottom: 64px;
+    padding-top: 0vh;
+  }
+
+  .numberBox {
+    font-size: 80px;
+    font-weight: 700;
+    height: 148px;
+    width: 140px;
+  }
+  .shadow {
+    height: 150px;
+    width: 140px;
+  }
+
+  .rectangleOne {
+    height: 1px;
+    top: 297px;
+    width: 140px;
+  }
+
+  .rectangleTwo {
+    height: 76px;
+    width: 140px;
+  }
+
+  .halfCircleOne {
+    height: 12px;
+    top: 290px;
+    width: 8px;
+  }
+
+  .halfCircleTwo {
+    margin-left: 132px;
+    top: 290px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .numberContainer {
+    margin: 0 1vw;
+  }
+
+  .halfCircleOne {
+    height: 12px;
+    top: 290px;
+    width: 8px;
+  }
+
+  .halfCircleTwo {
+    margin-left: 132px;
+    top: 290px;
+  }
+}
